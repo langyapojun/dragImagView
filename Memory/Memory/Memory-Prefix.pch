@@ -1,0 +1,31 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+#import "UIViewAdditions.h"
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+//  屏幕bounds
+#define kScreenBounds ([[UIScreen mainScreen]bounds])
+#define kScreenWidth (kScreenBounds.size.width)
+#define kScreenHeight (kScreenBounds.size.height)
+
+//  tableview的宽度
+#define kTableViewWith 90
+//  collectionview cell的间距
+#define kSpace 10
+
+#define kNameLabelHeight 30
+#define kNameLabelWidth 60
+#define kLabelFont 12
